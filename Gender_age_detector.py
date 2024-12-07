@@ -23,7 +23,18 @@ def main():
         for (x, y, w, h) in faces:
             face_img = frame[y:y + h, x:x + w].copy()
             blob = cv2.dnn.blobFromImage(face_img, 1, (244, 244), MODEL_MEAN_VALUES, swapRB=True)
-        
+
+            gender_net.setInput(blob)
+            gender_preds = gender_net.forward()
+            gender = gender_list[gender_preds[0].argmax()]
+            
+            age_net.setInput(blob)
+            age_preds = age_net.forward()
+            age = age_list[age_preds[0].argmax()]
+            
+            overlay_text = "%s %s" % (gender, age)
+            cv2.putText(frame, overlay_text, (x, y), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2, cv2.LINE_AA)
+
         cv2.imshow('frame', frame)
 
         if cv2.waitKey(1) & 0xFF == 27:
