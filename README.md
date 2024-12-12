@@ -5,17 +5,27 @@
 This project utilizes **OpenCV** and the **Caffe framework** to detect faces in real-time camera input and predict the gender and age of detected faces.  
 It is designed for students interested in computer vision and deep learning, providing a foundational structure and code for learning and experimentation.
 
+
 ---
 
-## Sources
+## Usage
 
-1. **Link**: [Caffe Model Zoo](https://github.com/BVLC/caffe/wiki/Model-Zoo)  
-   **Description**: A repository of various deep learning models for experimentation with the Caffe framework.  
-   **Original Author**: BVLC (Berkeley Vision and Learning Center)
+1. **Run the Main Script** After downloading the required models and ensuring the directory structure matches the setup provided, no additional configuration is needed. Simply execute the following command :
+`python Gender_age_detector.py`
 
-2. **Link**: [Age and Gender Classification](https://gist.github.com/GilLevi/c9e99062283c719c03de)  
-   **Description**: CNN-based age and gender classification models and resources created by Gil Levi.  
-   **Original Author**: Gil Levi
+2. The program will activate the webcam, detect faces, and display age and gender predictions in real-time.
+
+
+![](https://github.com/RoRdil31/Open-Source-SW_Term-Project/blob/main/before_execute.png?raw=true)
+
+
+
+---
+
+## Result
+
+![](https://github.com/RoRdil31/Open-Source-SW_Term-Project/blob/main/result_15to20.png?raw=true)
+
 
 ---
 
@@ -83,9 +93,14 @@ It is designed for students interested in computer vision and deep learning, pro
 
 ---
 
-## Usage
 
-1. **Run the Main Script** After downloading the required models and ensuring the directory structure matches the setup provided, no additional configuration is needed. Simply execute the following command :
-`python Gender_age_detector.py`
 
-2. The program will activate the webcam, detect faces, and display age and gender predictions in real-time.
+## Sources
+
+1. **Link**: [Caffe Model Zoo](https://github.com/BVLC/caffe/wiki/Model-Zoo)  
+   **Description**: A repository of various deep learning models for experimentation with the Caffe framework.  
+   **Original Author**: BVLC (Berkeley Vision and Learning Center)
+
+2. **Link**: [Age and Gender Classification](https://gist.github.com/GilLevi/c9e99062283c719c03de)  
+   **Description**: CNN-based age and gender classification models and resources created by Gil Levi.  
+   **Original Author**: Gil Levi
