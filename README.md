@@ -62,3 +62,20 @@ It is designed for students interested in computer vision and deep learning, pro
    - GUI style configuration file.  
    - Key contents:
      - Specifies visual styles such as bounding box colors and text fonts for displaying results.
+
+7. **Model Files (Download Required)**  
+   - **age_net.caffemodel**: Pre-trained model for age prediction (download required).  
+   - **gender_net.caffemodel**: Pre-trained model for gender prediction (download required).  
+   - Download locations are provided in the README or project source comments.
+
+8. **data/** (Expected Directory)  
+   - Directory to store datasets for model training or testing.  
+   - May require specifying the path in the project.
+
+9. **models/** (Expected Directory)  
+   - Directory to store downloaded pre-trained model files.  
+   - e.g., `age_net.caffemodel`, `gender_net.caffemodel`.
+
+10. **scripts/** (Expected Directory)  
+    - Scripts for data preprocessing or model testing.  
+    - e.g., dataset transformation, result visualization scripts.
