@@ -80,4 +80,12 @@ It is designed for students interested in computer vision and deep learning, pro
     - Scripts for data preprocessing or model testing.  
     - e.g., dataset transformation, result visualization scripts.
    
-    
+
+---
+
+## Usage
+
+1. **Run the Main Script** After downloading the required models and ensuring the directory structure matches the setup provided, no additional configuration is needed. Simply execute the following command :
+`python Gender_age_detector.py`
+
+2. The program will activate the webcam, detect faces, and display age and gender predictions in real-time.
